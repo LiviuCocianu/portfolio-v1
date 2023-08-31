@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Calibre */
+@font-face {
+    font-family: "Calibre";
+    src: url("./src/assets/fonts/calibre/CalibreRegular.otf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Calibre";
+    src: url("./src/assets/fonts/calibre/CalibreSemibold.otf") format("opentype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Calibre";
+    src: url("./src/assets/fonts/calibre/CalibreBold.otf") format("opentype");
+    font-weight: 700;
+}
+
+/* SF Mono */
+@font-face {
+    font-family: "SFMono";
+    src: url("./src/assets/fonts/sfmono/SFMono-Regular.otf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "SFMono";
+    src: url("./src/assets/fonts/sfmono/SFMono-Semibold.otf") format("opentype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "SFMono";
+    src: url("./src/assets/fonts/sfmono/SFMono-Bold.otf") format("opentype");
+    font-weight: 700;
+}
+
+html, body, #root {
+    width: 100%;
+    height: 100%;
+}
