@@ -22,9 +22,9 @@ function ContactsSidebar() {
 
 const ContactButton = ({link="", hoverText, Icon, onClick}) => {
 	return (
-		<div link={link} onClick={onClick} className="w-6 h-6 flex items-center group" onClick={onClick}>
-			<Icon className="w-6 h-6 fill-beige-100 cursor-pointer peer absolute group-hover:fill-beige-300" />
-			<p className="absolute translate-x-12 invisible peer-hover:visible">{hoverText}</p>
+		<div link={link} onClick={onClick} className="flex items-center justify-center w-full h-6 group" onClick={onClick}>
+			<Icon className="absolute w-6 h-6 transition-transform origin-center cursor-pointer fill-beige-100 peer group-hover:fill-beige-300 group-hover:scale-[110%]" />
+			<p className="absolute left-0 invisible translate-x-14 peer-hover:visible">{hoverText}</p>
 		</div>
 	)
 }

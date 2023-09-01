@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Ignore mockups
+*.psd
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
