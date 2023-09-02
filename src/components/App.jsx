@@ -2,6 +2,7 @@ import ContactsSidebar from './ContactsSidebar'
 import HeroSection from './HeroSection'
 import IntroSection from './IntroSection'
 import MainNavigation from './MainNavigation'
+import SkillsSection from './SkillsSection'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <ContactsSidebar/>
       <HeroSection/>
       <IntroSection/>
+      <SkillsSection/>
     </div>
   )
 }

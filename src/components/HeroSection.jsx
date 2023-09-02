@@ -41,7 +41,7 @@ function HeroSection() {
     }, [playStates, playPronounciation])
 
     return (
-        <section className="flex items-center justify-center w-full h-full snap-start">
+        <header className="flex items-center justify-center w-full h-full snap-start">
             <div className="space-y-6 w-[60%]">
                 <h3 className="text-lg font-bold font-sfmono text-coffee-100">Hello, my name is</h3>
 
@@ -60,7 +60,7 @@ function HeroSection() {
                     Even so, I just love creating, no matter the programming language!
                 </p>
             </div>
-        </section>
+        </header>
     )
 }
 

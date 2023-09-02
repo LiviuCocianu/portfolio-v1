@@ -36,7 +36,7 @@ const Node = ({node, index}) => {
 			<p className={`text-end transition-transform group-hover:scale-[80%] group-hover:translate-x-8${index % 2 != 0 ? " font-calibre" : " font-sfmono text-sm text-beige-300"}`}>{index % 2 != 0 ? node.label : node.year}</p>
 
 			<div className="z-10 flex justify-center group-hover:scale-[120%] transition-transform">
-				<div className="h-12 rounded-full bg-beige-50 aspect-square"></div>
+				<div className="h-10 rounded-full bg-beige-50 aspect-square"></div>
 			</div>
 
 			<p className={`text-start transition-transform group-hover:scale-[80%] group-hover:-translate-x-8${index % 2 == 0 ? " font-calibre" : " font-sfmono text-sm text-beige-300"}`}>{index % 2 == 0 ? node.label : node.year}</p>
