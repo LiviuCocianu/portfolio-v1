@@ -56,8 +56,8 @@ function HeroSection() {
                 </div>
 
                 <p className="w-full text-lg font-semibold tracking-wider text-justify font-calibre text-beige-200">
-                    Web developer with an extensive background in Java and React.js<br />
-                    Even so, I just love creating, no matter the programming language!
+                    Web developer with an extensive background in React.js and Java<br />
+                    I just love creating, no matter the programming language!
                 </p>
             </div>
         </header>

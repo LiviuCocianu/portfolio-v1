@@ -7,7 +7,8 @@ export default {
   theme: {
     fontFamily: {
       calibre: ["Calibre"],
-      sfmono: ["SFMono"]
+      sfmono: ["SFMono"],
+      chawp: ["Chawp"]
     },
     extend: {
       colors: {

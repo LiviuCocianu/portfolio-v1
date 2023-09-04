@@ -29,7 +29,7 @@ function IntroSection() {
 						</p>
 					</div>
 
-					<div className="flex flex-col items-center">
+					<div className="flex flex-col items-center select-none">
 						<img className="w-[60%] aspect-square max-w-[14rem] mb-12" src="./src/assets/images/about.png" alt="" />
 						<Timeline/>
 					</div>
