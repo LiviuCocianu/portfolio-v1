@@ -30,7 +30,7 @@ function IntroSection() {
 					</div>
 
 					<div className="flex flex-col items-center select-none">
-						<img className="w-[60%] aspect-square max-w-[14rem] mb-12" src="public/assets/images/about.PNG" alt="Portrait of me in introduction section" />
+						<img className="w-[60%] aspect-square max-w-[14rem] mb-12" src="./assets/images/about.png" alt="Portrait of me in introduction section" />
 						<Timeline/>
 					</div>
 				</div>
