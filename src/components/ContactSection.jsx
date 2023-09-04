@@ -40,7 +40,7 @@ function ContactSection() {
 
 									{/* FormSubmit settings */}
 									<input type="hidden" name="_template" value="box"></input>
-									<input type="hidden" name="_captcha" value="false"></input>
+									{/* <input type="hidden" name="_captcha" value="false"></input> */}
 									<input type="hidden" name="_subject" value="Portfolio contact!"></input>
 
 									<div className="w-full">
