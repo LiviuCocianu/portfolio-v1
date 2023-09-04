@@ -54,14 +54,22 @@ html, body, #root {
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-    width: 10px;
+    display: none;
 }
 
-::-webkit-scrollbar-track {
-    background: #1a120b;
-}
 
-::-webkit-scrollbar-thumb {
-    background: #0d0803;
-    border-radius: 50px;
+@media (min-width: 768px) {
+    ::-webkit-scrollbar {
+        display: block;
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #1a120b;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #0d0803;
+        border-radius: 50px;
+    }
 }

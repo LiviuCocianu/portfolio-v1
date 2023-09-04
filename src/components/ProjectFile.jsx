@@ -18,14 +18,14 @@ const ProjectFile = ({
     driveLink = ""
 }) => {
     return (
-        <div className="relative flex justify-center h-[28rem]">
-            <div className={`absolute w-[80%] h-[50%] rounded-md bg-beige-50 top-24 rotate-[8deg] translate-x-2 bg-contain bg-no-repeat bg-center transition-transform hover:translate-x-0 hover:rotate-0 hover:-translate-y-10 peer z-10 select-none`}>
+        <div className="relative flex justify-center h-[26rem] md:h-[28rem]">
+            <div className={`absolute w-[80%] h-[50%] rounded-md bg-beige-50 top-16 md:top-24 rotate-[8deg] translate-x-2 bg-contain bg-no-repeat bg-center transition-transform hover:translate-x-0 hover:rotate-0 hover:-translate-y-10 peer z-10 select-none`}>
                 <img src={thumbnailURI} />
             </div>
-            <div className="relative w-[80%] h-[50%] rounded-md bg-beige-200 top-24 rotate-[-8deg] transition-transform peer-hover:rotate-0 peer-hover:-translate-y-10 z-0" />
+            <div className="relative w-[80%] h-[50%] rounded-md bg-beige-200 top-16 md:top-24 rotate-[-8deg] transition-transform peer-hover:rotate-0 peer-hover:-translate-y-10 z-0" />
 
             {/* Info area */}
-            <div className="absolute bottom-0 w-[95%] rounded-md bg-coffee-200 h-1/2 z-10">
+            <div className="absolute bottom-0 w-[95%] rounded-md bg-coffee-200 pb-6 md:pb-0 md:h-1/2 z-10">
                 <div className="absolute w-1/4 h-8 rounded-t-lg bg-coffee-200 -top-6" />
 
                 <div className="flex flex-col px-5 mt-6 font-calibre">

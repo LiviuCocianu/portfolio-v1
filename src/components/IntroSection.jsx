@@ -3,10 +3,12 @@ import Timeline from "./Timeline"
 function IntroSection() {
 	return (
 		<section id="introduction" className="flex justify-center w-full snap-start">
-			<div className="w-[70%]">
-				<div className="grid justify-center w-full grid-cols-[60%_40%] py-20">
-					<div className="pr-8 space-y-6 text-justify text-beige-200">
-						<h1 className="text-4xl font-bold font-calibre text-beige-50">Introduction</h1>
+			<div className="w-[80%] md:w-[70%]">
+				<div className="grid justify-center w-full grid-rows-[repeat(auto-fit, auto)] md:grid-rows-none md:grid-cols-[60%_40%] pt-20">
+					<div className="flex flex-col space-y-6 text-sm text-justify md:block md:text-base md:pr-8 text-beige-200">
+						<h1 className="self-center text-4xl font-bold md:self-start font-calibre text-beige-50">Introduction</h1>
+
+						<img className="block w-[80%] mb-12 md:hidden aspect-square self-center" src="./assets/images/about.png" alt="Portrait of me in introduction section" />
 
 						<p className="mt-1">
 							<b>Hello there! I’m Liviu.</b> My passion for creating has begun from a very young age in the form of drawing or doing origami. The act of bringing what you envision from your mind and into the world, with your own hands, brought me the biggest amount of joy and satisfaction! <span className="text-xs">(and it still does)</span>
@@ -30,7 +32,7 @@ function IntroSection() {
 					</div>
 
 					<div className="flex flex-col items-center select-none">
-						<img className="w-[60%] aspect-square max-w-[14rem] mb-12" src="./assets/images/about.png" alt="Portrait of me in introduction section" />
+						<img className="hidden md:block w-[60%] aspect-square max-w-[14rem] mb-12" src="./assets/images/about.png" alt="Portrait of me in introduction section" />
 						<Timeline/>
 					</div>
 				</div>

@@ -2,14 +2,14 @@ import ProjectFile from "./ProjectFile"
 
 function ProjectsSection() {
 	return (
-		<section id="projects" className="flex justify-center w-full min-h-full pt-40 snap-start">
-			<div className="w-[85%]">
+		<section id="projects" className="flex justify-center w-full min-h-full pt-28 md:pt-[5%] snap-start">
+			<div className="w-[85%] flex flex-col justify-center">
 				<div className="w-full">
 					<h1 className="text-4xl font-bold font-calibre text-beige-50">Projects</h1>
-					<div className="w-1/2 h-1 bg-beige-50 bg-gradient-to-r from-beige-50 to-coffee-300" />
+					<div className="w-full h-1 md:w-1/2 bg-coffee-300 bg-gradient-to-r from-beige-50 to-coffee-300" />
 				</div>
 
-				<div className="grid grid-cols-[repeat(auto-fit,20rem)] gap-4 mt-4">
+				<div className="grid grid-cols-[repeat(auto-fit,100%)] md:grid-cols-[repeat(auto-fit,20rem)] gap-4 mt-4">
 					<ProjectFile
 						title="Soundure"
 						subtitle="February 2023 - July 2023"

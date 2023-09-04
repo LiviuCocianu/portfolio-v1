@@ -33,13 +33,13 @@ function Timeline() {
 const Node = ({node, index}) => {
 	return (
 		<div className="grid items-center w-full grid-cols-3 px-4 my-16 text-beige-100 group">
-			<p className={`text-end transition-transform group-hover:scale-[80%] group-hover:translate-x-8${index % 2 != 0 ? " font-calibre" : " font-sfmono text-sm text-beige-300"}`}>{index % 2 != 0 ? node.label : node.year}</p>
+			<p className={`text-end transition-transform group-hover:scale-[80%] group-hover:translate-x-4 md:group-hover:translate-x-8${index % 2 != 0 ? " font-calibre" : " font-sfmono text-sm text-beige-300"}`}>{index % 2 != 0 ? node.label : node.year}</p>
 
-			<div className="z-10 flex justify-center group-hover:scale-[120%] transition-transform">
+			<div className="z-[1] flex justify-center group-hover:scale-[120%] transition-transform">
 				<div className="h-10 rounded-full bg-beige-50 aspect-square"></div>
 			</div>
 
-			<p className={`text-start transition-transform group-hover:scale-[80%] group-hover:-translate-x-8${index % 2 == 0 ? " font-calibre" : " font-sfmono text-sm text-beige-300"}`}>{index % 2 == 0 ? node.label : node.year}</p>
+			<p className={`text-start transition-transform group-hover:scale-[80%] group-hover:-translate-x-4 md:group-hover:-translate-x-8${index % 2 == 0 ? " font-calibre" : " font-sfmono text-sm text-beige-300"}`}>{index % 2 == 0 ? node.label : node.year}</p>
 		</div>
 	)
 }
