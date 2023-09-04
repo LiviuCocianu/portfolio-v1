@@ -41,6 +41,7 @@ function ContactSection() {
 									<input type="hidden" name="_template" value="box"></input>
 									<input type="hidden" name="_captcha" value="false"></input>
 									<input type="hidden" name="_subject" value="Portfolio contact!"></input>
+									<input type="hidden" name="_next" value="https://liviucocianu.github.io/portfolio-v1/success.html"></input>
 
 									<div className="w-full">
 										<label htmlFor="nameInput">Name</label><br />
