@@ -33,12 +33,14 @@ function ContactSection() {
 								</div>
 
 								{/* Form */}
-								<form action="https://formsubmit.co/liviucocianu@gmail.com" method="POST" className="relative flex flex-col items-center gap-6 mt-6 text-base font-calibre text-coffee-200" spellCheck={false}>
+								<form action="https://formsubmit.co/35743066fdb9ef0ebecbef6f4d8f719d" method="POST" className="relative flex flex-col items-center gap-6 mt-6 text-base font-calibre text-coffee-200" spellCheck={false}>
 									{/* Honeypot */}
 									<input type="text" name="_honey" className="hidden"/>
 
+									{/* FormSubmit settings */}
 									<input type="hidden" name="_template" value="box"></input>
 									<input type="hidden" name="_captcha" value="false"></input>
+									<input type="hidden" name="_subject" value="Portfolio contact!"></input>
 
 									<div className="w-full">
 										<label htmlFor="nameInput">Name</label><br />
