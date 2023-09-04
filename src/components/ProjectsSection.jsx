@@ -16,7 +16,7 @@ function ProjectsSection() {
 						description="Standalone music player made using React Native with Expo. NativeBase was used for building the UI and Redux for state management"
 						thumbnailURI="src/assets/images/soundure.png"
 						skillList={["React Native", "Expo", "Redux", "NativeBase", "SQLite"]}
-						pdfLink="src/assets/documents/soundure_preview.pdf"
+						pdfLink="src/assets/documents/soundure_preview.PDF"
 						githubLink="https://github.com/LiviuCocianu/soundure"
 						driveLink="https://drive.google.com/drive/folders/1AJvdtAOeotfFaPB6cekCwQ-jja-erjzP?usp=sharing"
 					/>
@@ -25,7 +25,7 @@ function ProjectsSection() {
 						title="Raster Image Editor"
 						subtitle="November 2022 - January 2023"
 						description="Simple photo editor for raster images. No frameworks or libraries were used for this project"
-						thumbnailURI="src/assets/images/raster-editor.png"
+						thumbnailURI="src/assets/images/raster-editor.PNG"
 						skillList={["HTML", "CSS", "JavaScript"]}
 						demoLink="https://liviucocianu.github.io/raster-image-editor/4_1082_COCIANU_LIVIU_IONUT.html"
 						githubLink="https://github.com/LiviuCocianu/raster-image-editor"
