@@ -5,6 +5,11 @@ export default {
     "./success.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  safelist: [
+    {
+      pattern: /fill-+/,
+    },
+  ],
   theme: {
     fontFamily: {
       calibre: ["Calibre"],

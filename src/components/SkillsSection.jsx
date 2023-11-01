@@ -1,36 +1,35 @@
 import {
-	HTMLIcon,
-	CSSIcon,
-	JavascriptIcon, 
 	ReactIcon,
 	ReduxIcon,
 	TailwindIcon,
-	SassIcon,
 	ExpoIcon,
 	JavaIcon,
-	PythonIcon
+	PythonIcon,
 } from "../assets/icons/library"
+import ReactRouterIcon from "../assets/icons/ReactRouterIcon"
+import SocketIoIcon from "../assets/icons/SocketIoIcon"
 import SQLIcon from "../assets/icons/SQLIcon"
 
 const webDevSkills = {
-	"HTML": HTMLIcon,
-	"CSS": CSSIcon,
-	"JavaScript": JavascriptIcon,
-	"React.js": ReactIcon,
-	"Redux.js": ReduxIcon,
-	"TailwindCSS": TailwindIcon,
-	"SCSS": SassIcon
+	"React.js": { icon: ReactIcon, fill: "#2bf1ff"},
+	"Redux Toolkit": { icon: ReduxIcon, fill: "#8b4dff" },
+	"Tailwind": { icon: TailwindIcon, fill: "#0089de" },
+	"React Router": { icon: ReactRouterIcon },
+	"Socket.io": { icon: SocketIoIcon, fill: "#d5cea3" },
+	"Express.js": undefined,
+	"Prisma ORM": undefined
 }
 
 const mobileDevSkills = {
-	"React Native": ReactIcon,
-	"Expo": ExpoIcon
+	"React Native": { icon: ReactIcon, fill: "#2bf1ff" },
+	"Expo": { icon: ExpoIcon, fill: "#0a0c0f" },
+	"NativeBase": undefined
 }
 
 const genDevSkills = {
-	"Java": JavaIcon,
-	"SQL": SQLIcon,
-	"Python": PythonIcon
+	"Java": { icon: JavaIcon, fill: "#ff872b" },
+	"MySQL": { icon: SQLIcon, fill: "#969696" },
+	"Python": { icon: PythonIcon, fill: "#3579de"}
 }
 
 function SkillsSection() {
@@ -57,20 +56,30 @@ const SkillSection = ({ title="", skillMap }) => {
 
 			<div className="flex flex-wrap w-full gap-2 mt-2 gap-y-3 grow">
 				{
-					Object.entries(skillMap).map((skill, i) => <SkillCard name={skill[0]} Icon={skill[1]} key={i + skill[0]} />)
+					Object.entries(skillMap).map((skill, i) => <SkillCard name={skill[0]} skillObject={skill[1]} key={i + skill[0]} />)
 				}
 			</div>
 		</article>
 	)
 }
 
-const SkillCard = ({ name="", Icon }) => {
+const SkillCard = ({ name="", skillObject }) => {
+	const {
+		fill,
+		icon: Icon
+	} = !skillObject ? {} : skillObject
+
 	return (
 		<div className={`relative h-12 md:h-16 text-${name.length >= 8 ? "sm" : "lg"} font-sfmono text-bold select-none group z-[1]`}>
 			<div className="absolute z-0 flex items-center justify-around w-full h-full translate-y-1 rounded-xl bg-beige-50" />
 			<div className="relative flex items-center justify-around h-full px-2 transition-transform md:px-4 z-1 rounded-xl bg-coffee-100 group-hover:-translate-y-1">
 				<p className="text-[0.7rem] md:text-base">{name}</p>
-				<Icon className="w-6 md:w-8 pl-2 min-w-[30px] fill-beige-100"/>
+
+				{
+					!Icon ? <></> : (
+						<Icon className="w-6 md:w-8 pl-2 min-w-[30px]" fill={fill} />
+					)
+				}
 			</div>
 		</div>
 	)

@@ -9,7 +9,17 @@ function ProjectsSection() {
 					<div className="w-full h-1 md:w-1/2 bg-coffee-300 bg-gradient-to-r from-beige-50 to-coffee-300" />
 				</div>
 
-				<div className="grid grid-cols-[repeat(auto-fit,100%)] md:grid-cols-[repeat(auto-fit,20rem)] gap-4 mt-4">
+				<div className="grid grid-cols-[repeat(auto-fit,100%)] md:grid-cols-[repeat(auto-fit,20rem)] gap-6 mt-4">
+					<ProjectFile
+						title="Raster Image Editor"
+						subtitle="November 2022 - January 2023"
+						description="Simple photo editor for raster images. No frameworks or libraries were used for this project"
+						thumbnailURI="./assets/images/raster-editor.png"
+						skillList={["HTML", "CSS", "JavaScript"]}
+						demoLink="https://liviucocianu.github.io/raster-image-editor/4_1082_COCIANU_LIVIU_IONUT.html"
+						githubLink="https://github.com/LiviuCocianu/raster-image-editor"
+					/>
+
 					<ProjectFile
 						title="Soundure"
 						subtitle="February 2023 - July 2023"
@@ -21,14 +31,14 @@ function ProjectsSection() {
 						driveLink="https://drive.google.com/drive/folders/1AJvdtAOeotfFaPB6cekCwQ-jja-erjzP?usp=sharing"
 					/>
 
-					<ProjectFile 
-						title="Raster Image Editor"
-						subtitle="November 2022 - January 2023"
-						description="Simple photo editor for raster images. No frameworks or libraries were used for this project"
-						thumbnailURI="./assets/images/raster-editor.png"
-						skillList={["HTML", "CSS", "JavaScript"]}
-						demoLink="https://liviucocianu.github.io/raster-image-editor/4_1082_COCIANU_LIVIU_IONUT.html"
-						githubLink="https://github.com/LiviuCocianu/raster-image-editor"
+					<ProjectFile
+						title="Paper Soccer"
+						subtitle="September 2023 - October 2023"
+						description={"\"Paper soccer\" is a web application game based on the 2-player, paper-and-pencil game with the same name"}
+						thumbnailURI="./assets/images/paper-soccer.png"
+						skillList={["React", "Tailwind", "Redux Toolkit", "React Router", "Socket.io", "Express", "MySQL"]}
+						demoLink="https://liviucocianu.github.io/paper-soccer/"
+						githubLink="https://github.com/LiviuCocianu/paper-soccer"
 					/>
 				</div>
 			</div>

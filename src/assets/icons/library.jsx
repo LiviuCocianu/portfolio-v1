@@ -18,20 +18,20 @@ const externalLink = "M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H
 const pdf = "M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M9.5 11.5C9.5 12.3 8.8 13 8 13H7V15H5.5V9H8C8.8 9 9.5 9.7 9.5 10.5V11.5M14.5 13.5C14.5 14.3 13.8 15 13 15H10.5V9H13C13.8 9 14.5 9.7 14.5 10.5V13.5M18.5 10.5H17V11.5H18.5V13H17V15H15.5V9H18.5V10.5M12 10.5H13V13.5H12V10.5M7 10.5H8V11.5H7V10.5Z"
 const drive = "M7.71,3.5L1.15,15L4.58,21L11.13,9.5M9.73,15L6.3,21H19.42L22.85,15M22.28,14L15.42,2H8.58L8.57,2L15.43,14H22.28Z"
 
-export const GmailIcon = ({ className }) => <PictogramersIcon className={className} d={gmail} />
-export const GithubIcon = ({ className }) => <PictogramersIcon className={className} d={github} viewBox="0 0 496 512" />
-export const LinkedInIcon = ({ className }) => <PictogramersIcon className={className} d={linkedin} viewBox="0 0 448 512" />
-export const CodepenIcon = ({ className }) => <PictogramersIcon className={className} d={codepen} viewBox="0 0 512 512" />
-export const HTMLIcon = ({ className }) => <PictogramersIcon className={className} d={html} />
-export const CSSIcon = ({ className }) => <PictogramersIcon className={className} d={css} />
-export const JavascriptIcon = ({ className }) => <PictogramersIcon className={className} d={js} />
-export const ReactIcon = ({ className }) => <PictogramersIcon className={className} d={react} />
-export const ReduxIcon = ({ className }) => <PictogramersIcon className={className} d={redux} viewBox="0 -6 256 256" />
-export const TailwindIcon = ({ className }) => <PictogramersIcon className={className} d={tailwind} />
-export const SassIcon = ({ className }) => <PictogramersIcon className={className} d={sass} viewBox="0 -4 32 32" />
-export const ExpoIcon = ({ className }) => <PictogramersIcon className={className} d={expo} viewBox="0 0 512 512" />
-export const JavaIcon = ({ className }) => <PictogramersIcon className={className} d={java} viewBox="0 0 50 50" />
-export const PythonIcon = ({ className }) => <PictogramersIcon className={className} d={python} />
-export const ExternalLinkIcon = ({ className }) => <PictogramersIcon className={className} d={externalLink} />
-export const PDFIcon = ({ className }) => <PictogramersIcon className={className} d={pdf} />
-export const GoogleDriveIcon = ({ className }) => <PictogramersIcon className={className} d={drive} />
+export const GmailIcon = (props) => <PictogramersIcon d={gmail} {...props} />
+export const GithubIcon = (props) => <PictogramersIcon d={github} viewBox="0 0 496 512" {...props} />
+export const LinkedInIcon = (props) => <PictogramersIcon d={linkedin} viewBox="0 0 448 512" {...props} />
+export const CodepenIcon = (props) => <PictogramersIcon d={codepen} viewBox="0 0 512 512" {...props} />
+export const HTMLIcon = (props) => <PictogramersIcon d={html} {...props} />
+export const CSSIcon = (props) => <PictogramersIcon d={css} {...props} />
+export const JavascriptIcon = (props) => <PictogramersIcon d={js} {...props} />
+export const ReactIcon = (props) => <PictogramersIcon d={react} {...props} />
+export const ReduxIcon = (props) => <PictogramersIcon d={redux} viewBox="0 -6 256 256" {...props} />
+export const TailwindIcon = (props) => <PictogramersIcon d={tailwind} {...props} />
+export const SassIcon = (props) => <PictogramersIcon d={sass} viewBox="0 -4 32 32" {...props} />
+export const ExpoIcon = (props) => <PictogramersIcon d={expo} viewBox="0 0 512 512" {...props} />
+export const JavaIcon = (props) => <PictogramersIcon d={java} viewBox="0 0 50 50" {...props} />
+export const PythonIcon = (props) => <PictogramersIcon d={python} {...props} />
+export const ExternalLinkIcon = (props) => <PictogramersIcon d={externalLink} {...props} />
+export const PDFIcon = (props) => <PictogramersIcon d={pdf} {...props} />
+export const GoogleDriveIcon = (props) => <PictogramersIcon d={drive} {...props} />
