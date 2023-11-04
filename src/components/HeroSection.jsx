@@ -55,11 +55,11 @@ function HeroSection() {
                         </div>
                     </div>
 
-                    <h2 className="font-calibre font-semibold text-center text-xl md:text-start md:text-[2.2rem] text-beige-100">Front End React Developer</h2>
+                    <h2 className="font-calibre font-semibold text-center text-xl md:text-start md:text-[2.2rem] text-beige-100">React Web Developer</h2>
                 </div>
 
                 <p className="w-full text-lg font-semibold tracking-wider text-justify font-calibre text-beige-200">
-                    Web developer with an extensive background in React.js and Java<br />
+                    Web developer with a background in React.js and sometimes Java<br />
                     I just love creating, no matter the programming language!
                 </p>
             </div>
