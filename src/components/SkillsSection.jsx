@@ -5,6 +5,7 @@ import {
 	ExpoIcon,
 	JavaIcon,
 	PythonIcon,
+	AngularIcon,
 } from "../assets/icons/library"
 import ReactRouterIcon from "../assets/icons/ReactRouterIcon"
 import SocketIoIcon from "../assets/icons/SocketIoIcon"
@@ -17,7 +18,9 @@ const webDevSkills = {
 	"React Router": { icon: ReactRouterIcon },
 	"Socket.io": { icon: SocketIoIcon, fill: "#d5cea3" },
 	"Express.js": undefined,
-	"Prisma ORM": undefined
+	"Prisma ORM": undefined,
+	"Angular.js": { icon: AngularIcon, fill: "#f73952", soon: true },
+	"Spring Boot": { soon: true }
 }
 
 const mobileDevSkills = {
@@ -29,21 +32,22 @@ const mobileDevSkills = {
 const genDevSkills = {
 	"Java": { icon: JavaIcon, fill: "#ff872b" },
 	"MySQL": { icon: SQLIcon, fill: "#969696" },
-	"Python": { icon: PythonIcon, fill: "#3579de"}
+	"Python": { icon: PythonIcon, fill: "#3579de"},
+	"MariaDB": { soon: true }
 }
 
 function SkillsSection() {
 	return (
-		<section id="skills" className="flex items-center justify-center w-full h-full pt-22 snap-start">
+		<section id="skills" className="flex items-center justify-center w-full 2xl:h-full snap-start pt-16 pb-4 2xl:pt-0 2xl:pb-0">
 			<div className="w-[80%]">
 				<div className="w-full">
-					<h1 className="text-4xl font-bold font-calibre text-beige-50">Skills</h1>
+					<h1 className="text-4xl font-bold font-calibre text-beige-50">Technology stack</h1>
 					<div className="w-full h-1 md:w-1/2 bg-coffee-300 bg-gradient-to-r from-beige-50 to-coffee-300"/>
 				</div>
 
-				<SkillSection title="Web development skills" skillMap={webDevSkills} />
-				<SkillSection title="Mobile development skills" skillMap={mobileDevSkills} />
-				<SkillSection title="Other related skills" skillMap={genDevSkills} />
+				<SkillSection title="Web development technologies/programming languages I have worked with in the past" skillMap={webDevSkills} />
+				<SkillSection title=".. as for mobile development" skillMap={mobileDevSkills} />
+				<SkillSection title=".. and others" skillMap={genDevSkills} />
 			</div>
 		</section>
 	)
@@ -66,7 +70,8 @@ const SkillSection = ({ title="", skillMap }) => {
 const SkillCard = ({ name="", skillObject }) => {
 	const {
 		fill,
-		icon: Icon
+		icon: Icon,
+		soon=false
 	} = !skillObject ? {} : skillObject
 
 	return (
@@ -79,6 +84,10 @@ const SkillCard = ({ name="", skillObject }) => {
 					!Icon ? <></> : (
 						<Icon className="w-6 md:w-8 pl-2 min-w-[30px]" fill={fill} />
 					)
+				}
+
+				{
+					soon ? <span className="text-xs text-beige-300">&nbsp;(soon)</span> : ""
 				}
 			</div>
 		</div>

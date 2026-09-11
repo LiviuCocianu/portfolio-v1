@@ -17,6 +17,7 @@ const python = "M19.14,7.5A2.86,2.86 0 0,1 22,10.36V14.14A2.86,2.86 0 0,1 19.14,
 const externalLink = "M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
 const pdf = "M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M9.5 11.5C9.5 12.3 8.8 13 8 13H7V15H5.5V9H8C8.8 9 9.5 9.7 9.5 10.5V11.5M14.5 13.5C14.5 14.3 13.8 15 13 15H10.5V9H13C13.8 9 14.5 9.7 14.5 10.5V13.5M18.5 10.5H17V11.5H18.5V13H17V15H15.5V9H18.5V10.5M12 10.5H13V13.5H12V10.5M7 10.5H8V11.5H7V10.5Z"
 const drive = "M7.71,3.5L1.15,15L4.58,21L11.13,9.5M9.73,15L6.3,21H19.42L22.85,15M22.28,14L15.42,2H8.58L8.57,2L15.43,14H22.28Z"
+const angular = "M12,2.5L20.84,5.65L19.5,17.35L12,21.5L4.5,17.35L3.16,5.65L12,2.5M12,4.5L5,7L6.08,16.22L12,19.5L17.92,16.22L19,7L12,4.5M12,5.72L16.58,16H14.87L13.94,13.72H10.04L9.12,16H7.41L12,5.72M13.34,12.3L12,9.07L10.66,12.3H13.34Z"
 
 export const GmailIcon = (props) => <PictogramersIcon d={gmail} {...props} />
 export const GithubIcon = (props) => <PictogramersIcon d={github} viewBox="0 0 496 512" {...props} />
@@ -35,3 +36,4 @@ export const PythonIcon = (props) => <PictogramersIcon d={python} {...props} />
 export const ExternalLinkIcon = (props) => <PictogramersIcon d={externalLink} {...props} />
 export const PDFIcon = (props) => <PictogramersIcon d={pdf} {...props} />
 export const GoogleDriveIcon = (props) => <PictogramersIcon d={drive} {...props} />
+export const AngularIcon = (props) => <PictogramersIcon d={angular} {...props} />

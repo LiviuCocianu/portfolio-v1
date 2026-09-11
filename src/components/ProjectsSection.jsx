@@ -2,7 +2,7 @@ import ProjectFile from "./ProjectFile"
 
 function ProjectsSection() {
 	return (
-		<section id="projects" className="flex justify-center w-full min-h-full pt-28 md:pt-[5%] snap-start">
+		<section id="projects" className="flex justify-center w-full min-h-full snap-start pt-16 2xl:pt-0">
 			<div className="w-[85%] flex flex-col justify-center">
 				<div className="w-full">
 					<h1 className="text-4xl font-bold font-calibre text-beige-50">Projects</h1>

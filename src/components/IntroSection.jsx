@@ -8,10 +8,10 @@ function IntroSection() {
 					<div className="flex flex-col space-y-6 text-sm text-justify md:block md:text-base md:pr-8 text-beige-200">
 						<h1 className="self-center text-4xl font-bold md:self-start font-calibre text-beige-50">Introduction</h1>
 
-						<img className="block w-[80%] mb-12 md:hidden aspect-square self-center" src="./assets/images/about.png" alt="Portrait of me in introduction section" />
+						<img className="block w-[80%] mb-12 md:hidden aspect-square self-center rounded-full" src="/assets/images/about-v2.png" alt="Portrait of me in introduction section" />
 
 						<p className="mt-1">
-							<b>Hello there! I’m Liviu.</b> My passion for creating has begun from a very young age in the form of drawing or doing origami. The act of bringing what you envision from your mind and into the world, with your own hands, brought me the biggest amount of joy and satisfaction! <span className="text-xs">(and it still does)</span>
+							<b>Hello! I’m Liviu.</b> My passion for creating has begun from a very young age in the form of drawing or doing origami. The act of bringing what you envision from your mind and into the world, with your own hands, brought me the biggest amount of joy and satisfaction! <span className="text-xs">(and it still does)</span>
 						</p>
 
 						<p>
@@ -19,7 +19,7 @@ function IntroSection() {
 						</p>
 
 						<p>
-							Later on, in 2017, I’ve heard about “plugins”: these little jar files you can use to alter the game with less limitations, using the <span className="text-yellow-300 hover:animate-pulse">Java</span> programming language. I’ve had my fair share of opportunities to improve my Java knowledge and privately create plugins for multiple Minecraft communities, some paid, while some not.
+							Later on, in 2017, I’ve heard about this thing called “plugins”: these little jar files you can use to alter the game with less limitations, using the <span className="text-yellow-300 hover:animate-pulse">Java</span> programming language. I’ve had my fair share of opportunities to improve my Java knowledge and privately create plugins for multiple Minecraft communities, some paid, while some not.
 						</p>
 
 						<p>
@@ -32,7 +32,7 @@ function IntroSection() {
 					</div>
 
 					<div className="flex flex-col items-center select-none">
-						<img className="hidden md:block w-[60%] aspect-square max-w-[14rem] mb-12" src="./assets/images/about.png" alt="Portrait of me in introduction section" />
+						<img className="hidden md:block w-[60%] aspect-square max-w-[14rem] mb-12 rounded-full" src="/assets/images/about-v2.png" alt="Portrait of me in introduction section" />
 						<Timeline/>
 					</div>
 				</div>
