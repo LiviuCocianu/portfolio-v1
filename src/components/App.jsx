@@ -5,7 +5,7 @@ import HeroSection from './HeroSection'
 import IntroSection from './IntroSection'
 import MainNavigation from './MainNavigation'
 import ProjectsSection from './ProjectsSection'
-import SkillsSection from './SkillsSection'
+import TechStackSection from './TechStackSection'
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <ContactsSidebar/>
       <HeroSection/>
       <IntroSection/>
-      <SkillsSection/>
+      <TechStackSection/>
       <ProjectsSection/>
       <ContactSection/>
       <Footer/>
